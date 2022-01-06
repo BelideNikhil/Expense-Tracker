@@ -78,11 +78,12 @@ ul{
     margin-left: 1rem;
 }
 .container{
+    margin: auto;
     max-width: 1400px;
     min-height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .msg{
