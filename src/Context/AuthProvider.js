@@ -19,7 +19,7 @@ const reducer=(state,action)=>{
 
 export const AuthProvider=({children})=>{
     const [state,dispatchFunction]=useReducer(reducer,{user:null,authIsReady:false})
-    console.log("AUTH:STATE",state)
+    // console.log("AUTH:STATE",state)
 
     //if user is logged then fetch firebase auth and set the user as logged in user once
     useEffect(() => {
