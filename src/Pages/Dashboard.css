@@ -1,0 +1,92 @@
+.dashboard{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 90%;
+    column-gap: 2rem;
+    margin: 1.5rem 0;
+}
+.dashboard .list-div{
+    width: 80%;
+}
+.trans-data{
+    color:var(--ternary-color);
+    background-color: var(--primary-color);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 1px solid var(--ternary-color);
+    border-radius: 4px;
+    padding:1rem 2rem;
+}
+.trans-data form{
+    margin: 1rem 0;
+}
+.trans-data form>*{
+    margin: 1rem 0;
+    padding: 1.3rem 0;
+}
+.trans-data .btn{
+    margin-top: 1rem;
+    padding: 4px 8px;
+}
+/*  */
+.each-transaction{
+    display: grid;
+    grid-template-columns:1fr 0.4fr 0.1fr;
+    padding: 0.5rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--primary-color);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.each-transaction>*{
+    padding: 0.5rem;
+}
+.each-transaction h3{
+    text-align: left;
+}
+.each-transaction h4{
+    text-align: right;
+}
+.each-transaction p{
+    position: relative;
+}
+#delete-btn{
+    color: var(--highlight-color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.2rem;
+}
+#delete-btn:hover{
+    color: red;
+    transform: scale(1.2);
+}
+@media screen and (max-width:800px) {
+    .dashboard{
+        column-gap: 0.5rem;
+    }
+    .dashboard .list-div{
+        width: 90%;
+    }
+    .trans-data form{
+        margin-top: 0.5rem;
+    }
+    .trans-data form>*{
+        margin: 0.5rem 0;
+        padding: 0.5rem 0;
+    }
+}
+@media screen and (max-width:500px){
+    .dashboard{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        gap: 1rem;
+        margin: 1.5rem 0;
+    }
+    .dashboard .list-div{
+        width: 100%;
+    }
+    .dashboard div:nth-of-type(1){
+        order: 2;
+    }
+}
