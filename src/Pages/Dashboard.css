@@ -15,6 +15,7 @@
     border: 1px solid var(--ternary-color);
     border-radius: 4px;
     padding:1rem 2rem;
+    height: max-content;
 }
 .trans-data form{
     margin: 1rem 0;
